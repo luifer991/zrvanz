@@ -1,6 +1,7 @@
 import './App.css'
 import { Features } from './UI/Features'
 import Hero from './UI/Hero'
+import { Products } from './UI/Products'
 import { Section } from './UI/section'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
   return (
     <>
       <Hero />
-      < Features />
+      <Features />
       <Section />
+      <Products />
     </>
   )
 }
