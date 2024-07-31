@@ -1,6 +1,7 @@
 import './App.css'
 import { Features } from './UI/Features'
 import Hero from './UI/Hero'
+import { Section } from './UI/section'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <Hero />
       < Features />
+      <Section />
     </>
   )
 }
