@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Ageo';
+    src: url('../../fonts/AgeoTrial-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.menu-container {
+    position: relative;
+}
+
+
+.hamburger {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #701C1C;
+    gap: .65rem;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.hamburger>div {
+    background: #e6e1dc;
+    height: 2px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.menu-options {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #701C1C;
+    padding: 80px 20px;
+    z-index: 2;
+}
+
+.menu-options ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu-options li {
+    margin: 10px 0;
+}
+
+.menu-options a {
+    color: #e6e1dc;
+    font-family: 'Ageo', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.menu-options a:hover {
+    color: black;
+}
+
+@media (min-width: 400px) {
+    .hamburger {
+        display: none;
+        animation: none;
+    }
+
+    .menu-options {
+        background: transparent;
+        top: -58px;
+        left: 10px;
+        width: 40vw;
+        height: 10vh;
+        z-index: 2;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+
+    .menu-options ul {
+        display: flex;
+        flex-direction: row;
+        opacity: 1 !important;
+        padding: 0 0 4rem 4rem;
+        margin: 0 0 4rem 0;
+        transform: translateX(0) !important;
+        z-index: 999;
+        animation: none;
+    }
+
+    .menu-options li {
+        color: #e6e1dc;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        animation: none;
+        border: 4px solid #701C1C;
+        padding: 10px 10px;
+        border-radius: 25px;
+    }
+
+    .menu-options a {
+        margin: 0 0 5rem 0;
+        font-size: 24px;
+    }
+}

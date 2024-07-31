@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Ageo';
+    src: url('../../fonts/AgeoTrial-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vanio';
+    src: url('../../fonts/VanioTrial-RegularItalic.ttf') format('ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navbar__logo {
+    margin-top: 0.65rem;
+    width: 100px;
+    height: auto;
+}
+
+.hero{
+    margin: 370px 0 0 20px;
+}
+
+.hero__text {
+    color: #e6e1dc;
+}
+
+.hero__title {
+    font-family: 'Ageo', sans-serif;
+    font-size: 40px;
+}
+
+.hero__body{
+    font-family: 'Vanio', serif;
+    font-style: italic;
+    width: 45ch;
+    font-size: 12px;
+    padding-top: 16px;
+}
+
+.cta__hero__btn{
+    width: 125px;
+    height: 34px;
+    border-radius: 25px;
+    font-family: 'Ageo', sans-serif;
+    font-size: 10px;
+    background-color: #701C1C;
+    color: #e6e1dc;
+    border: none;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.navbar__btns{
+    visibility: hidden;
+}
+
+@media (min-width: 1024px)  {
+    .navbar__logo{
+        width: 238px;
+        height: auto;
+    }
+
+    .hero{
+        margin: 200px 0 0 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero__title{
+        font-size: 96px;
+        width: 12ch;
+    }
+
+    .hero__body{
+        font-size: 24px;
+        width: 45ch;
+    }
+
+    .navbar__btns{
+        visibility: visible;
+        position: absolute;
+        top: 2.65rem;
+        right: 90px;
+    }
+
+    .navbar__btns a{
+        background-color: #701C1C;
+        color: #e6e1dc;
+        text-decoration: none;
+        padding: 12px 32px;
+        border-radius: 25px;
+        font-size: 24px;
+    }
+
+    .navbar__btns a:first-child {
+        margin-right: 1rem;
+    }
+
+    .cta__hero__btn{
+        margin-right: 90px;
+        width: 263px;
+        height: 70px;
+        font-size: 24px;
+    }
+}

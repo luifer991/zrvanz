@@ -1,0 +1,76 @@
+/* :root {
+} */
+/* CSS reset june 2024 */
+@font-face {
+  font-family: 'Ageo';
+  src: url('../../fonts/AgeoTrial-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vanio';
+  src: url('../../fonts/VanioTrial-RegularItalic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+  font-family: 'Vanio', serif;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  text-wrap: balance; 
+  font-family: 'Ageo', sans-serif;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  background-color: #e6e1dc;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
