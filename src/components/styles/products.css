@@ -1,0 +1,48 @@
+.text__container{
+    padding: 5rem 0 5rem 4rem;
+}
+
+.text__container h2{
+    font-size: 40px;
+}
+
+.text__container p{
+    font-size: 11px;
+    width: 30ch;
+}
+
+.container__list{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(300px, 1fr)
+    );
+    gap: 2rem;
+    padding: 0 3rem 0 3rem;
+}
+
+.card__container{
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 25px;
+    box-shadow: 5px 2px 12px 2px #e6d1dc;
+}
+
+.card__container img{
+    border-radius: 25px;
+}
+
+.card__container .li{
+    list-style: none;
+    font-size: 11px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.li{
+    margin: 0.5rem 0 0 0;
+}
+
+.li li{
+    margin: 0 0 0.25rem 0;
+}
