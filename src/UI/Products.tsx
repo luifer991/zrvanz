@@ -7,7 +7,7 @@ export function Products() {
     const { fragrances, loading, error } = useFragrances();
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <div>Loading...</div>
     }
 
     if (error) {
@@ -30,10 +30,12 @@ export function Products() {
                             <li>${f.price}</li>
                             <li>{f.popularity}</li>
                         </div>
-
                     </section>
                 ))}
             </ul>
+            <div className='container__btn'>
+                <a href="#" className='more__btn'>ver más</a>
+            </div>
         </>
 
     )
