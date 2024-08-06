@@ -1,6 +1,6 @@
-import { Texts } from "../components/texts";
+import { Texts } from "../components/texts"
 import '../components/styles/features.css'
-import { images } from "../hooks/constants";
+import { images } from "../hooks/constants"
 
 export function Features() {
     return (
