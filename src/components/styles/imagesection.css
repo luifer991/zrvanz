@@ -1,0 +1,33 @@
+.image__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+#img{
+    width: 385px;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 0 0 0 25px;
+}
+
+.img__section2{
+    padding-top: 10px;
+}
+
+.img__section2 img:first-child{
+    width:  150px;
+    height: auto;
+    aspect-ratio: 1/1;
+    padding-right: 12px;
+    /* border-radius: 0 0 0 25px; */
+}
+
+.img__section2 img:last-child{
+    width:  150px;
+    height: auto;
+    aspect-ratio: 1/1;
+    /* border-radius: 0 0 25px 0; */
+}
