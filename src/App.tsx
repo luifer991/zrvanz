@@ -1,6 +1,8 @@
 import './App.css'
 import { Texts } from './components/texts'
+import ContactSection from './UI/ContactSection'
 import { Features } from './UI/Features'
+import Footer from './UI/Footer'
 import Hero from './UI/Hero'
 import { Products } from './UI/Products'
 import { Section } from './UI/section'
@@ -26,6 +28,8 @@ function App() {
           <a href="#" className='contact__btn'>Contáctanos</a>
         </div>
       </Section>
+      <ContactSection />
+      <Footer />
     </>
   )
 }
