@@ -1,11 +1,11 @@
-.section{
+.section {
     background-color: #1c2470a3;
     height: 50vh;
 }
 
 /* section part 1 */
 
-.section__text{
+.section__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,12 +14,12 @@
     color: #e6d1dc;
 }
 
-.section__text h2{
+.section__text h2 {
     margin: 5rem 0 1rem 0;
     font-size: 40px;
 }
 
-.section__text p{
+.section__text p {
     margin: 0 0 5rem 0;
     font-size: 11px;
     width: 30ch;
@@ -27,7 +27,7 @@
 
 /* Section par 2 */
 
-.section__text__cta{   
+.section__text__cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,22 +37,22 @@
     margin-left: 3rem;
 }
 
-.section__text__cta h2{
+.section__text__cta h2 {
     margin: 5rem 0 1rem 0;
     font-size: 40px;
 }
 
-.section__text__cta p{
+.section__text__cta p {
     margin: 0 0 2rem 0;
     font-size: 11px;
     width: 50ch;
 }
 
-.container__btn__cta{
+.container__btn__cta {
     margin: 0 0 0 3rem;
 }
 
-.contact__btn{
+.contact__btn {
     padding: 10px 24px;
     border-radius: 25px;
     font-family: 'Ageo', sans-serif;
@@ -66,16 +66,36 @@
 }
 
 /* Media queries for section part 1 */
-@media (min-width:400px){
-    .section__text h2{
+@media (min-width:400px) {
+    .section__text h2 {
         margin: 8rem 0 1rem 0;
         font-size: 64px;
     }
-    
-    .section__text p{
+
+    .section__text p {
         margin: 0 0 8rem 0;
         font-size: 24px;
         width: 50ch;
     }
 }
 
+/* MEdia queries section 2 */
+@media (min-width:400px) {
+    .section__text__cta h2 {
+        font-size: 64px;
+    }
+
+    .section__text__cta p {
+        font-size: 24px;
+        width: 50ch;
+    }
+
+    .contact__btn {
+        position: relative;
+        bottom: 100px;
+        left: 1040px;
+        padding: 25px 80px;
+        cursor: pointer;
+        font-size: 24px;
+    }
+}
