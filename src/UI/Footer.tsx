@@ -1,4 +1,4 @@
-import zorvanzLogo from '../../public/ZorvanzZorvanz.svg'
+import zorvanzLogo from '/ZorvanzZorvanz.svg'
 
 export default function Footer() {
     return (
