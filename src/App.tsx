@@ -29,7 +29,7 @@ function App() {
         </div>
       </Section>
       <ContactSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
